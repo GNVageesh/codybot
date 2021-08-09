@@ -16,7 +16,7 @@ client.on("message", (message) => {
 	const command = args.shift().toLowerCase();
 
 	if (command === "ping") {
-		msg.reply("Pong 🏓");
+		message.reply("Pong 🏓");
 	} else if (!message.content.startsWith("!") || message.author.bot) {
 		return;
 	} else if (command === "abt-me") {
